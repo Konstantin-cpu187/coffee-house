@@ -37,75 +37,87 @@
 }
 
 @media (max-width: 768px) {
-  .header .header-wrap {
+  .container {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  .header-wrap {
     flex-direction: column;
-    /* Шапка становится вертикальной */
     text-align: center;
+    padding: 10px 0;
   }
 
-  .header .header-wrap .logo img {
-    width: 30%;
-    /* Логотип становится меньше */
+  .logo img {
+    width: 50%;
   }
 
-  .menu-wrap {
+  .nav ul {
     flex-direction: column;
-    /* Меню становится вертикальным */
     align-items: center;
+    gap: 15px;
   }
 
-  .menu img {
-    margin: 20px 0;
-    /* Добавляем отступы для картинок */
-    width: 80%;
-    /* Ограничиваем ширину */
-    height: auto;
-    /* Сохраняем пропорции */
-  }
-
-  .menu-title {
-    padding: 20px;
-    /* Уменьшаем внутренние отступы */
-  }
-}
-
-@media (max-width: 480px) {
-
-  h1,
-  h2,
-  h3 {
-    font-size: 1.5rem;
-    /* Заголовки становятся меньше */
-  }
-
-  p {
-    font-size: 1rem;
-    /* Размер текста уменьшается */
-  }
-
-  .header .header-wrap .nav ul li a {
+  .nav ul li a {
     font-size: 18px;
-    /* Ссылки становятся меньше */
   }
 
   .about-house {
     flex-direction: column;
-    /* Блок "О нас" становится вертикальным */
-    padding: 20px;
+    text-align: center;
+    gap: 20px;
   }
 
   .about-image {
-    padding: 0;
-    width: 100%;
-    /* Картинка занимает всю ширину */
-    margin-bottom: 20px;
-    /* Добавляем отступ снизу */
+    width: 80%;
+    margin: 0 auto;
   }
 
-  .modal .modal-content {
+  .menu-wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .menu-title {
+    padding: 20px;
     width: 90%;
-    /* Уменьшаем ширину модального окна */
-    padding: 10px;
+  }
+
+  .menu img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .footer-contacts {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-column {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .nav ul li a {
+    font-size: 16px;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 15px;
   }
 }
 
