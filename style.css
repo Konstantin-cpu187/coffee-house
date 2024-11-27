@@ -1,0 +1,385 @@
+/* Подключение шрифта */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('./fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('./fonts/PlayfairDisplay-Regular.woff') format('woff'),
+    url('./fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('./fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+    url('./fonts/PlayfairDisplay-Bold.woff') format('woff'),
+    url('./fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* Адаптивные стили */
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+
+  .header .header-wrap .nav ul {
+    flex-direction: column;
+    /* Меню становится вертикальным */
+    align-items: center;
+  }
+
+  .header .header-wrap .logo h1 {
+    font-size: 24px;
+    /* Уменьшаем размер текста */
+  }
+}
+
+@media (max-width: 768px) {
+  .header .header-wrap {
+    flex-direction: column;
+    /* Шапка становится вертикальной */
+    text-align: center;
+  }
+
+  .header .header-wrap .logo img {
+    width: 30%;
+    /* Логотип становится меньше */
+  }
+
+  .menu-wrap {
+    flex-direction: column;
+    /* Меню становится вертикальным */
+    align-items: center;
+  }
+
+  .menu img {
+    margin: 20px 0;
+    /* Добавляем отступы для картинок */
+    width: 80%;
+    /* Ограничиваем ширину */
+    height: auto;
+    /* Сохраняем пропорции */
+  }
+
+  .menu-title {
+    padding: 20px;
+    /* Уменьшаем внутренние отступы */
+  }
+}
+
+@media (max-width: 480px) {
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5rem;
+    /* Заголовки становятся меньше */
+  }
+
+  p {
+    font-size: 1rem;
+    /* Размер текста уменьшается */
+  }
+
+  .header .header-wrap .nav ul li a {
+    font-size: 18px;
+    /* Ссылки становятся меньше */
+  }
+
+  .about-house {
+    flex-direction: column;
+    /* Блок "О нас" становится вертикальным */
+    padding: 20px;
+  }
+
+  .about-image {
+    padding: 0;
+    width: 100%;
+    /* Картинка занимает всю ширину */
+    margin-bottom: 20px;
+    /* Добавляем отступ снизу */
+  }
+
+  .modal .modal-content {
+    width: 90%;
+    /* Уменьшаем ширину модального окна */
+    padding: 10px;
+  }
+}
+
+
+/* Общие стили */
+body {
+  font-family: 'Playfair Display', serif, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  /* Жирные заголовки */
+}
+
+p {
+  font-weight: 400;
+  /* Обычный текст */
+}
+
+
+/* Контейнер для центрирования содержимого */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Шапка */
+.header {
+  background: #6b4c35;
+  color: #fff;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .header-wrap .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .header-wrap .logo img {
+  width: 15%;
+  border-radius: 100%;
+}
+
+.header .header-wrap .logo h1 {
+  font-size: 28px;
+  margin: 0 0 0 5%;
+}
+
+.header .header-wrap .nav {
+  width: 30%;
+}
+
+.header .header-wrap .nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.header .header-wrap .nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 5px 15px;
+}
+
+.header .header-wrap .nav ul li a:hover {
+  color: #000;
+  background-color: #e1ccad;
+  border-radius: 15px;
+  padding: 5px 15px;
+}
+
+
+/* Секция "О нас" */
+.about {
+  background-color: #e1ccad;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.about-house {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 300px;
+  padding: 0 0 0 150px;
+  border-radius: 10px;
+}
+
+.image {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #e1ccad;
+
+}
+
+/* Секция "Меню" */
+.menu {
+  background: #e1ccad;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.menu-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-title {
+  width: 100%;
+  background-image: url(https://i.pinimg.com/736x/1a/5a/1c/1a5a1cc89e503feca19a2ed574c7432f.jpg);
+  background-size: cover;
+  padding: 10px 150px 30px 30px;
+  box-shadow:
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 15px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* Выделение текста при наведении на элемент списка */
+.menu-title ul li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 10px;
+}
+
+.menu-title ul li:hover {
+  background-color: #6b4c35;
+  /* Изменяем фон на оранжевый */
+  color: white;
+  /* Изменяем цвет текста на белый */
+  border-radius: 10px;
+  /* Добавляем скругление углов */
+}
+
+
+.menu img {
+  margin: 0 40px;
+  border-radius: 100%;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  margin: 5px 0;
+  text-align: left;
+}
+
+/* Подвал */
+.footer-container {
+  background: #6b4c35;
+  color: white;
+}
+
+.footer-contacts {
+  display: flex;
+}
+
+.footer-column {
+  flex: 1 1 300px;
+  margin: 15px;
+}
+
+.footer-column a {
+  color: white;
+}
+
+.social-icons a {
+  color: white;
+}
+
+.footer-container .footer-column .social-icons .icon {
+  display: flex;
+  align-items: center;
+}
+
+.footer-container .footer-column .social-icons .icon img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Футер */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* Скрыто по умолчанию */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal .modal-content form {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal .modal-content form input {
+  height: 29px;
+  border-radius: 10px;
+  border: none;
+  padding: 0 20px;
+}
+
+.modal .modal-content form button {
+  height: 29px;
+  background-color: #e1ccad;
+  border: none;
+  border-radius: 10px;
+}
+
+.modal .modal-content form button:hover {
+  background-color: #6b4c35;
+  color: white;
+}
+
+/* Контент модального окна */
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #dadada;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Кнопка закрытия */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  color: #888;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #000;
+}

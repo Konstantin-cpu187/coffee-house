@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Добро пожаловать в нашу кофейню! Свежий кофе, уютная атмосфера и отличное обслуживание.">
+  <meta name="keywords" content="кофейня, кофе, меню, заказать кофе">
+  <meta name="author" content="Костя">
+  <title>Coffee House</title>
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Шапка сайта -->
+  <header class="header">
+    <div class="container">
+      <div class="header-wrap">
+        <div class="logo">
+          <img src="https://i.postimg.cc/W1XT2sd5/logo.png" alt="logo">
+          <h1>Кофейня</h1>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#footer">О нас</a></li>
+            <li><a href="#menu">Меню</a></li>
+            <li><a href="#footer">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Секция "О нас" -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-house">
+        <div class="about-title">
+          <h2>Добро пожаловать в Кофейню</h2>
+          <p>Вас ждёт идеальная чашка кофе! Мы предлагаем свежезаваренные напитки и уютную атмосферу.</p>
+        </div>
+        <img src="https://i.postimg.cc/cC4vLFs3/123456.png" alt="Coffee" class="about-image">
+        <img src="https://i.postimg.cc/5yqSZ7sF/coffi-1.png" alt="Coffee" class="about-image">
+      </div>
+    </div>
+  </section>
+  <div class="image">
+    <img src="https://i.postimg.cc/G2FFPWCs/image.png" alt="">
+  </div>
+  <!-- Секция "Меню" -->
+  <section id="menu" class="menu">
+    <div class="container">
+      <div class="menu-wrap">
+        <div class="menu-title">
+          <h2>Горячий Кофе</h2>
+          <ul>
+            <li>Espresso - $3</li>
+            <li>Latte - $4</li>
+            <li>Cappuccino - $4.5</li>
+            <li>Mocha - $5</li>
+            <li>Espresso - $3</li>
+            <li>Latte - $4</li>
+            <li>Cappuccino - $4.5</li>
+            <li>Mocha - $5</li>
+          </ul>
+        </div>
+        <img src="https://i.pinimg.com/originals/98/cf/60/98cf606ddc858f6471b974bc0f47d11b.gif" alt="">
+        <div class="menu-title">
+          <h2>Холодный Кофе</h2>
+          <ul>
+            <li>Айс Американо - $5</li>
+            <li>Айс латте - $6</li>
+            <li>Гляссе - $7.5</li>
+            <li>Эспрессо тоник - $3 </li>
+            <li>Айс Американо - $5</li>
+            <li>Айс латте - $6</li>
+            <li>Гляссе - $7.5</li>
+            <li>Эспрессо тоник - $3 </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Модальное окно для формы -->
+    <div class="modal" id="feedbackForm">
+      <div class="modal-content">
+        <span class="close-btn" id="closeForm">×</span>
+        <h2 id="listItemInfo">Вы выбрали: </h2>
+        <form>
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="tel" placeholder="Ваш телефон" required>
+          <input type="number" placeholder="Количество" required>
+          <button type="submit"><b>Отправить заказ</b></button>
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="footer-container">
+    <div class="container">
+      <div class="footer-contacts">
+        <div class="footer-column">
+          <h3>Контакты</h3>
+          <p>Телефон: +373 123 456</p>
+          <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+          <p>Адрес: Кишинёв, ул. Примерная 123</p>
+        </div>
+        <div class="footer-column">
+          <h3>Связаться с нами</h3>
+          <p>Мы доступны в социальных сетях:</p>
+          <div class="social-icons">
+            <div class="icon">
+              <img src="https://static.vecteezy.com/system/resources/previews/018/930/415/large_2x/instagram-logo-instagram-icon-transparent-free-png.png" alt="">
+              <a href="#">Instagram</a>
+            </div>
+            <div class="icon">
+              <img src="https://static.vecteezy.com/system/resources/previews/042/148/630/non_2x/telegram-logo-telegram-social-media-icon-free-png.png" alt="">
+              <a href="#">Telegram</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>О Нас</h3>
+          <p>Мы подбираем вкусы со знанием дела. Приходи, и мы покажем тебе, как натуральные ингредиенты превращаются в
+            настоящее произведение!
+          </p>
+          <p>Работаем с 9:00 до 18:00.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Футер -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <p>&copy; 2024 Coffee House. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
